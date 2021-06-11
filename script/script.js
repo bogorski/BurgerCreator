@@ -30,8 +30,7 @@
 				imgCount++;
 				if(imgCount==imgsArr.length){
 					for(let j=0; j<imgsArr.length; j++){
-						let ingredientName = imgsArr[j].src.substr(56);
-						console.log(ingredientName)
+						let ingredientName = imgsArr[j].src.substr(55);
 						ingredientName = ingredientName.substr(0,ingredientName.length-4);						
 						if(ingredientName=='tomato' || ingredientName=='lettuce' || ingredientName=='cheese'){
 							tempHeight = tempHeight	- 10;
