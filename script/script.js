@@ -33,8 +33,8 @@
 						let ingredientName = imgsArr[j].src.substr(55);
 						ingredientName = ingredientName.substr(0,ingredientName.length-4);
 						let aaa = document.createElement("div");
-						div.appendChild(creator);
-						div.innerText = ingredientName;
+						creatorView.appendChild(aaa);
+						aaa.innerText = ingredientName;
 						if(ingredientName=='tomato' || ingredientName=='lettuce' || ingredientName=='cheese'){
 							tempHeight = tempHeight	- 10;
 						}else{
