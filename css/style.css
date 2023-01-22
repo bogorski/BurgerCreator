@@ -5,7 +5,7 @@ body {
 }
 
 p {
-	font-size: 3vh;
+	font-size: 2.5vh;
 	margin: 0;
 	overflow: hidden;
 }
@@ -13,7 +13,7 @@ p {
 a {
 	cursor: pointer;
 	color: #68bdfb;
-	font-size: 3vh;
+	font-size: 2.5vh;
 }
 
 a:hover {
@@ -71,15 +71,15 @@ button {
 }
 
 .circle {
-	width: 15vh;
-	height: 15vh;
+	width: 12vh;
+	height: 12vh;
 	border-radius: 50%;
 	background-color: #fefce7;
 	margin: auto;
 }
 
 .divHeight {
-	height: 30vh;
+	height: 25vh;
 }
 
 .instruction {
