@@ -1,24 +1,28 @@
 body {
-	font-family: 'Snowburst One';
+	font-family: "Snowburst One";
 	background-color: #76564b;
 	color: #fefce7;
 }
 
 p {
-	font-size: 1.5rem;
+	font-size: 3vh;
 	margin: 0;
-	overflow:hidden;
+	overflow: hidden;
 }
 
 a {
 	cursor: pointer;
 	color: #68bdfb;
-	font-size: 1.25rem;
+	font-size: 3vh;
 }
 
 a:hover {
-   color: #fefce7;
-   text-decoration: none;
+	color: #fefce7;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 5vh;
 }
 
 input {
@@ -32,26 +36,26 @@ button {
 	margin: auto;
 	padding: auto;
 	cursor: pointer;
-	width: 28px;
-	height: 28px;
+	width: 4vh;
+	height: 4vh;
 	color: #fefce7;
-	border:none;
+	border: none;
 	border-radius: 100%;
 }
 
-.btnRemove{
+.btnRemove {
 	width: auto;
 	height: auto;
-	font-size: 1.5rem;
+	font-size: 1vh;
 	color: white;
 	background-color: #fb5050;
 	border-radius: 0;
 }
 
 .btnSave {
-	width: 160px;
-	height: 60px;
-	font-size: 2rem;
+	width: 15vh;
+	height: 6vh;
+	font-size: 3vh;
 	color: #76564b;
 	background-color: #fefce7;
 }
@@ -67,18 +71,18 @@ button {
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #fefce7;
-  margin: auto;
+	width: 15vh;
+	height: 15vh;
+	border-radius: 50%;
+	background-color: #fefce7;
+	margin: auto;
 }
 
-.divHeight{
-	height: 250px;
+.divHeight {
+	height: 30vh;
 }
 
 .instruction {
-	font-size: 1.5rem;	
+	font-size: 2.5vh;
 	color: #68bdfb;
 }

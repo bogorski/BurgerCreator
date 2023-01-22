@@ -1,226 +1,238 @@
 <!DOCTYPE html>
 <html>
-	<head> 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>BurgerCreator</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">				
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet" >		
-	</head>
-	<body>
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-6">
-					<a class="creator">Burger Creator</a>
-				</div>
-				<div class="col-6">
-					<a class="favourites">Favourites Burger</a>
-				</div>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BurgerCreator</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-6">
+				<a class="creator">Burger Creator</a>
 			</div>
-			<div class="row text-center pb-5 pt-2">
-				<div class="col-12 heading">
-					<h1>Burger</h1>
-					<h1>Creator</h1>
-				</div>
+			<div class="col-6">
+				<a class="favourites">Favourites Burger</a>
 			</div>
-			<div class="row text-center creatorView">
-				<div class="col">
-					<div class="row">
-						<div class="col-6 col-lg-4 divHeight p-2">
-							<div class="row mb-2">
-								<div class="col align-self-center">
-									<button class="btnMinus" id="bottomBun-">-</button>
-								</div>
-								<div class="col">
-									<p>0</p>
-								</div>
-								<div class="col align-self-center">
-									<button class="btnPlus" id="bottomBun+">+</button>
-								</div>
+		</div>
+		<div class="row text-center pb-5 pt-2">
+			<div class="col-12 heading">
+				<h1>Burger</h1>
+				<h1>Creator</h1>
+			</div>
+		</div>
+		<div class="row text-center creatorView">
+			<div class="col-12 col-md-6">
+				<div class="row">
+					<div class="col-6 col-lg-4 divHeight p-2">
+						<div class="row mb-2">
+							<div class="col align-self-center">
+								<button class="btnMinus" id="bottomBun-">-</button>
 							</div>
-							<div class="row circle align-items-center">
-								<div class="col">
-									<img class="img-fluid" src="images/Ingredients/bottom-bun.png" alt="Bottom bun" width=100% height=100%> 
-								</div>
+							<div class="col">
+								<p>0</p>
 							</div>
-							<div class="row m-2">
-								<div class="col">
-									<p>bottom bun</p>
-								</div>
+							<div class="col align-self-center">
+								<button class="btnPlus" id="bottomBun+">+</button>
 							</div>
 						</div>
-						<div class="col-6 col-lg-4 divHeight p-2">
-							<div class="row mb-2">
-								<div class="col align-self-center">
-									<button class="btnMinus" id="topBun-">-</button>
-								</div>
-								<div class="col">
-									<p>0</p>
-								</div>
-								<div class="col align-self-center">
-									<button class="btnPlus" id="topBun+">+</button>
-								</div>
+						<div class="row circle align-items-center">
+							<div class="col">
+								<img class="img-fluid" src="images/Ingredients/bottom-bun.png" alt="Bottom bun"
+									width=100% height=100%>
 							</div>
-							<div class="row circle align-items-center">
-								<div class="col">
-									<img class="img-fluid " src="images/Ingredients/top-bun.png" alt="Top bun" width=100% height=100%> 
-								</div>
-							</div>
-							<div class="row m-2">
-								<div class="col">
-									<p>top bun</p>
-								</div>
-							</div>					
 						</div>
-						<div class="col-6 col-lg-4 divHeight p-2">
-							<div class="row mb-2">
-								<div class="col align-self-center">
-									<button class="btnMinus" id="tomato-">-</button>
-								</div>
-								<div class="col">
-									<p>0</p>
-								</div>
-								<div class="col align-self-center">
-									<button class="btnPlus" id="tomato+">+</button>
-								</div>
-							</div>
-							<div class="row circle align-items-center">
-								<div class="col">
-									<img class="img-fluid" src="images/Ingredients/tomato.png" alt="Tomato" width=100% height=100%> 
-								</div>
-							</div>
-							<div class="row m-2">
-								<div class="col">
-									<p>tomato</p>
-								</div>
-							</div>	
-						</div>
-					
-						<div class="col-6 col-lg-4 divHeight p-2">
-							<div class="row mb-2">
-								<div class="col align-self-center">
-									<button class="btnMinus" id="meat-">-</button>
-								</div>
-								<div class="col">
-									<p>0</p>
-								</div>
-								<div class="col align-self-center">
-									<button class="btnPlus" id="meat+">+</button>
-								</div>
-							</div>
-							<div class="row circle align-items-center">
-								<div class="col">
-									<img class="img-fluid" src="images/Ingredients/ingredient-burger.png" alt="ingredient-burger" width=100% height=100%> 
-								</div>
-							</div>
-							<div class="row m-2">
-								<div class="col">
-									<p>meat</p>
-								</div>
-							</div>	
-						</div>
-						<div class="col-6 col-lg-4 divHeight p-2">
-							<div class="row mb-2">
-								<div class="col align-self-center">
-									<button class="btnMinus" id="fish-">-</button>
-								</div>
-								<div class="col">
-									<p>0</p>
-								</div>
-								<div class="col align-self-center">
-									<button class="btnPlus" id="fish+">+</button>
-								</div>
-							</div>
-							<div class="row circle align-items-center">
-								<div class="col">
-									<img class="img-fluid" src="images/Ingredients/ingredient-fish.png" alt="ingredient-fish" width=100% height=100%> 
-								</div>
-							</div>
-							<div class="row m-2">
-								<div class="col">
-									<p>fish</p>
-								</div>
-							</div>	
-						</div>
-						<div class="col-6 col-lg-4 divHeight p-2">
-							<div class="row mb-2">
-								<div class="col align-self-center">
-									<button class="btnMinus" id="lettuce-">-</button>
-								</div>
-								<div class="col">
-									<p>0</p>
-								</div>
-								<div class="col align-self-center">
-									<button class="btnPlus" id="lettuce+">+</button>
-								</div>
-							</div>
-							<div class="row circle align-items-center">
-								<div class="col">
-									<img class="img-fluid" src="images/Ingredients/lettuce.png" alt="lettuce" width=100% height=100%> 
-								</div>
-							</div>
-							<div class="row m-2">
-								<div class="col">
-									<p>lettuce</p>
-								</div>
-							</div>	
-						</div>
-					
-						<div class="col-6 col-lg-4 divHeight p-2">
-							<div class="row mb-2">
-								<div class="col align-self-center">
-									<button class="btnMinus" id="cheese-">-</button>
-								</div>
-								<div class="col">
-									<p>0</p>
-								</div>
-								<div class="col align-self-center">
-									<button class="btnPlus" id="cheese+">+</button>
-								</div>
-							</div>
-							<div class="row circle align-items-center">
-								<div class="col">
-									<img class="img-fluid" src="images/Ingredients/ingredient-cheese.png" alt="ingredient-cheese" width=100% height=100%> 
-								</div>
-							</div>
-							<div class="row m-2">
-								<div class="col">
-									<p>cheese</p>
-								</div>
-							</div>	
-						</div>
-					</div>
-				</div>
-				<div class="col p-4">
-					<div class="row text-center ">
-						<div class="col">
-							<div class="row p-2">
-								<div class="col-12">
-									<h1>Your</h1>
-									<h1>Burger</h1>
-								</div>
-								<div class="col-12">
-									<p class="instruction">Add items to create Your burger. First item must be bottom bun. To finish Your burger choose top bun.</p>
-								</div>
+						<div class="row m-2">
+							<div class="col">
+								<p>bottom bun</p>
 							</div>
 						</div>
 					</div>
-					<div class="row text-center completing">
-						<div class="col-12">
-							<div class="canva">
+					<div class="col-6 col-lg-4 divHeight p-2">
+						<div class="row mb-2">
+							<div class="col align-self-center">
+								<button class="btnMinus" id="topBun-">-</button>
+							</div>
+							<div class="col">
+								<p>0</p>
+							</div>
+							<div class="col align-self-center">
+								<button class="btnPlus" id="topBun+">+</button>
 							</div>
 						</div>
-						<div class="col-12 save">
+						<div class="row circle align-items-center">
+							<div class="col">
+								<img class="img-fluid " src="images/Ingredients/top-bun.png" alt="Top bun" width=100%
+									height=100%>
+							</div>
+						</div>
+						<div class="row m-2">
+							<div class="col">
+								<p>top bun</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 divHeight p-2">
+						<div class="row mb-2">
+							<div class="col align-self-center">
+								<button class="btnMinus" id="tomato-">-</button>
+							</div>
+							<div class="col">
+								<p>0</p>
+							</div>
+							<div class="col align-self-center">
+								<button class="btnPlus" id="tomato+">+</button>
+							</div>
+						</div>
+						<div class="row circle align-items-center">
+							<div class="col">
+								<img class="img-fluid" src="images/Ingredients/tomato.png" alt="Tomato" width=100%
+									height=100%>
+							</div>
+						</div>
+						<div class="row m-2">
+							<div class="col">
+								<p>tomato</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 divHeight p-2">
+						<div class="row mb-2">
+							<div class="col align-self-center">
+								<button class="btnMinus" id="meat-">-</button>
+							</div>
+							<div class="col">
+								<p>0</p>
+							</div>
+							<div class="col align-self-center">
+								<button class="btnPlus" id="meat+">+</button>
+							</div>
+						</div>
+						<div class="row circle align-items-center">
+							<div class="col">
+								<img class="img-fluid" src="images/Ingredients/ingredient-burger.png"
+									alt="ingredient-burger" width=100% height=100%>
+							</div>
+						</div>
+						<div class="row m-2">
+							<div class="col">
+								<p>meat</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 divHeight p-2">
+						<div class="row mb-2">
+							<div class="col align-self-center">
+								<button class="btnMinus" id="fish-">-</button>
+							</div>
+							<div class="col">
+								<p>0</p>
+							</div>
+							<div class="col align-self-center">
+								<button class="btnPlus" id="fish+">+</button>
+							</div>
+						</div>
+						<div class="row circle align-items-center">
+							<div class="col">
+								<img class="img-fluid" src="images/Ingredients/ingredient-fish.png"
+									alt="ingredient-fish" width=100% height=100%>
+							</div>
+						</div>
+						<div class="row m-2">
+							<div class="col">
+								<p>fish</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 divHeight p-2">
+						<div class="row mb-2">
+							<div class="col align-self-center">
+								<button class="btnMinus" id="lettuce-">-</button>
+							</div>
+							<div class="col">
+								<p>0</p>
+							</div>
+							<div class="col align-self-center">
+								<button class="btnPlus" id="lettuce+">+</button>
+							</div>
+						</div>
+						<div class="row circle align-items-center">
+							<div class="col">
+								<img class="img-fluid" src="images/Ingredients/lettuce.png" alt="lettuce" width=100%
+									height=100%>
+							</div>
+						</div>
+						<div class="row m-2">
+							<div class="col">
+								<p>lettuce</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-4 divHeight p-2">
+						<div class="row mb-2">
+							<div class="col align-self-center">
+								<button class="btnMinus" id="cheese-">-</button>
+							</div>
+							<div class="col">
+								<p>0</p>
+							</div>
+							<div class="col align-self-center">
+								<button class="btnPlus" id="cheese+">+</button>
+							</div>
+						</div>
+						<div class="row circle align-items-center">
+							<div class="col">
+								<img class="img-fluid" src="images/Ingredients/ingredient-cheese.png"
+									alt="ingredient-cheese" width=80% height=80%>
+							</div>
+						</div>
+						<div class="row m-2">
+							<div class="col">
+								<p>cheese</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row text-center favouritesView d-none">	
+			<div class="col-12 col-md-6 p-4">
+				<div class="row text-center ">
+					<div class="col">
+						<div class="row p-2">
+							<div class="col-12">
+								<h1>Your</h1>
+								<h1>Burger</h1>
+							</div>
+							<div class="col-12">
+								<p class="instruction">Add items to create Your burger. First item must be bottom bun.
+									To finish Your burger choose top bun.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center completing">
+					<div class="col-12">
+						<div class="canva">
+						</div>
+					</div>
+					<div class="col-12 save">
+					</div>
+				</div>
 			</div>
-		</div>	
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"/></script>
-		<script src="script/script.js"/></script>
-	</body> 
+		</div>
+		<div class="row text-center favouritesView d-none">
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" />
+	</script>
+	<script src="script/script.js" />
+	</script>
+</body>
+
 </html>
